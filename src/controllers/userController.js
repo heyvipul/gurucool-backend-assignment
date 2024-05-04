@@ -1,6 +1,6 @@
 const UserModel = require('../models/userModel');
 const flowDistributionService = require('../services/flowDistributionService');
-const AstrologerModel = require('../models/astrologerModels'); // Ensure the correct path
+const AstrologerModel = require('../models/astrologerModels'); 
 
 const userController = {
   createUser: async (req, res) => {
