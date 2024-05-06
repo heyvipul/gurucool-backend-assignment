@@ -7,7 +7,7 @@ const cors = require("cors");
 require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
-//mongoDb connection
+
 mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGODB_URL, {
 })
 .catch((error) => {
   console.error('Error connecting to MongoDB:', error);
-  process.exit(1); // Exit the application if unable to connect to MongoDB
+  process.exit(1); 
 });
 
 const app = express();

@@ -6,7 +6,6 @@ const astrologerSchema = new mongoose.Schema({
   
 },{ timestamps: true });
 
-// Create astrologer model
 const AstrologerModel = mongoose.model('astrologer', astrologerSchema);
 
 module.exports = AstrologerModel;

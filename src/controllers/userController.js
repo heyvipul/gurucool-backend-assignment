@@ -8,7 +8,6 @@ const userController = {
       const { name } = req.body;
       const newUser = await UserModel.create({ name });
       
-      // Automatically connect the user to a top astrologer
       const connectedAstrologer = await flowDistributionService.connectUserToTopAstrologer(newUser._id);
       if (!connectedAstrologer) {
         console.log('Failed to connect user to top astrologer');

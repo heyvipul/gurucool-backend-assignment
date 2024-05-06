@@ -21,7 +21,7 @@ const astrologerController = {
       res.status(500).json({ message: 'Internal Server Error' });
     }
   },
-  //
+  
   updateFlowAdjustment: async (req, res) => {
     try {
       const { id } = req.params;
